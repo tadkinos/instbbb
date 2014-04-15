@@ -135,3 +135,16 @@ apt-get -y install ttf-ipafont
 apt-get -y install bigbluebutton
 
 apt-get -y install bbb-demo
+
+
+cd /etc/init.d/
+sed -i -e "33i JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" red5
+sed -i -e "34i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/us
+r/local/games:/usr/lib/jvm/java-7-openjdk-amd64/bin" red5
+
+sudo apt-get install default-jdk
+
+echo "****************"
+echo "インストール完了"
+echo "****************"
+
